@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
+
+
+.ActiveSlider {
+  left: 0% !important;
+  opacity: 1 !important;
+}
+.PrevSlider {
+  left: -100% !important;
+  opacity: 0 !important;
+}
+.NextSlider {
+  left: 100% !important;
+  opacity: 0 !important;
+}
+
+.main:hover .show-main{
+   transform: scale(1);
+}
+
+.Friends::-webkit-scrollbar {
+  width: 0;
+  cursor: pointer;
+
+}
+.Friends::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  cursor: pointer;
+}
+
+.Friends::-webkit-scrollbar-thumb
+{
+  background: rgb(146, 146, 146);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.Friends:-webkit-scrollbar-track {
+  background: #f4c5c5;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+
+.show-main{
+  transform: scale(0);
+  transition: all .4s ease-in-out;
+}
+
+.parent-img-profile span{
+  background: rgba(0, 0, 0, 0.379);
+  opacity: 0;
+  pointer-events: none;
+  bottom: -70px;
+  transition: all .4s ease;
+}
+.parent-img-profile:hover span{
+  opacity: 1 !important;
+  pointer-events: initial;
+  bottom: 0;
+}
+
+.Spinner{
+  animation: Spinnerr infinite .7s linear;
+  }
+  @keyframes Spinnerr {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
+
+  .ActiveSlider {
+    left: 0% !important;
+    opacity: 1 !important;
+  }
+  .PrevSlider {
+    left: -100% !important;
+    opacity: 0 !important;
+  }
+  .NextSlider {
+    left: 100% !important;
+    opacity: 0 !important;
+  }
+  
+  .PhoneInputInput{
+    border-radius: 19px;
+    /* border: 1px solid red !important; */
+  }
+ .error{
+    border: 1px solid red !important;
+  }
+
+  .cartmini::-webkit-scrollbar {
+    width: 0;
+    cursor: pointer;
+  
+  }
+  .cartmini::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+    cursor: pointer;
+  
+  }
+  
+  .cartmini::-webkit-scrollbar-thumb
+  {
+    background: #c0c0c1;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .cartmini:-webkit-scrollbar-track {
+    background: #f4c5c5;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  .popUpsignup{
+   transition: all .3s ease-in;
+   animation: anim 1s linear 1s infinite alternate;
+  }
+  .popUpsignup:hover{
+    animation-play-state: paused;
+  }
+
+  @keyframes anim {
+    0%{transform: scale(0.9);}
+    100%{transform: scale(1);}
+  }
